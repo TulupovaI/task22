@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="wrapper">
+<!-- категорії товарів -->
+    <section class="section_1">
+      <ul class="list1">
+        <li class="list1__cat">Для котів</li>
+        <li class="list1__dog">Для собак</li>
+        <li class="list1__fish">Для рибок</li>
+      </ul>   
+    </section>
+  <!-- спмсок товарів даної категорії -->
+    <section class="section_2">
+      <ul class="list2__cat">
+        <li class="cat1">Корм для котів</li>
+        <li class="cat2">Шампунь для котів</li>
+        <li class="cat3">Одяг для котів</li>
+      </ul>
+
+      <ul class="list2__dog">
+        <li class="dog1">Корм для собак</li>
+        <li class="dog2">Шампунь для собак</li>
+        <li class="dog3">Одяг для собак</li>
+      </ul>
+      
+      <ul class="list2__fish">
+        <li class="fish1">Корм для рибок</li>
+        <li class="fish2">Акваріуми</li>
+        <li class="fish3">Водоочисник</li>
+      </ul>      
+    </section>
+<!-- інформація -->
+    <section class="section_3">
+      <ul class="cat_info">
+        <li class="cat1__info hide">
+          <p class="description_for_cat1">Корм для котів Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, vel?</p>
+          <button class="btn">Купити</button>
+        </li>
+        <li class="cat2__info hide">
+          <p class="description_for_cat2">Шампунь для котів Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, vel?</p>
+          <button class="btn">Купити</button>
+        </li>
+        <li class="cat3__info hide">
+          <p class="description_for_cat3">Одяг для котів Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, vel?</p>
+          <button class="btn">Купити</button>
+        </li>
+      </ul>
+      
+      <ul class="dog_info">
+        <li class="dog1__info hide">
+          <p class="description_for_dog1">Корм для собак Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, vel?</p>
+          <button class="btn">Купити</button>
+        </li>
+        <li class="dog2__info hide">
+          <p class="description_for_dog2">Шампунь для собак Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, vel?</p>
+          <button class="btn">Купити</button>
+        </li>
+        <li class="dog3__info hide">
+          <p class="description_for_dog3">Одяг для собак Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, vel?</p>
+          <button class="btn">Купити</button>
+        </li>
+      </ul>
+
+      <ul class="fish_info">
+        <li class="fish1__info hide">
+          <p class="description_for_fish1">Корм для рибок Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, vel?</p>
+          <button class="btn">Купити</button>
+        </li>
+        <li class="fish2__info hide">
+          <p class="description_for_fish2">Акваріуми Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, vel?</p>
+          <button class="btn">Купити</button>
+        </li>
+        <li class="fish3__info hide">
+          <p class="description_for_fish3">Водоочисник Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, vel?</p>
+          <button class="btn">Купити</button>
+        </li>
+      </ul>
+    </section>
+  </div>  
+<!-- Форма реєстрації -->
+  <section class="field">
+    <form id="signup">
+      <h1 class="title">
+        Форма для замовлення
+      </h1>
+      <div class="surname1">
+        <label class="surname" for="surname" placeholder="">Прізвище:</label>
+        <input type="text" id="surname" name="surname" />
+        <small></small>
+      </div>
+      <div class="name1">
+        <label class="name" for="name" placeholder="">Ім'я: </label>
+        <input type="text" id="name" name="name" >          
+        <small></small>
+      </div >
+      <div class="patronymic1">
+        <label class="patronymic" for="patronymic" placeholder="">По батькові: </label>
+        <input type="text" id="patronymic" name="patronymic" >          
+        <small></small>
+      </div >
+      <div class="city">
+        <label for="city-select">Місто проживання:</label>
+        <select name="city" id="city-select">
+            <option value="">Виберіть місто</option>
+            <option value="kyiv">Київ</option>
+            <option value="kharkiv">Харків</option>
+            <option value="dnipro">Дніпро</option>
+            <option value="lviv">Львів</option>
+            <option value="odesa">Одеса</option>
+            <option value="chernigiv">Чернігів</option>
+                       
+        </select>
+        <small></small>
+      </div>
+      <div class="post">
+        <label for="post-select">Склад нової пошти:</label>
+        <select name="post" id="post-select">
+          <option value="">Виберіть відділення</option>
+          <option value="№1">№1</option>
+          <option value="№1">№2</option>
+          <option value="№1">№3</option>
+          <option value="№1">№4</option>
+            
+        </select> 
+        <small></small>   
+      </div>
+      <div class="pay1">
+        <p class="pay">
+          Вкажіть форму оплати:
+        </p>
+        <input type="radio" id="card" name="card" value="Card" checked>
+        <label for="card">Карткою</label>
+
+        <input type="radio" id="afterpay" name="card" value="afterpay">
+        <label for="afterpay">Післяплата</label>
+        <small></small>
+      </div>
+      <label class='quantity' for="tentacles">Кількість продукції (1-100):</label>
+      <input type="number" id="tentacles" name="tentacles" value="1"
+       min="1" max="100" > 
+       <small></small>    
+      
+      <div class="comment">
+        <label  for="comment">Коментар до замовлення:</label>
+        <textarea class="comment_1" id="comment" name="comment" rows="5" cols="33"></textarea>
+       
+      </div>
+        
+      <input type="submit" value="Submit">
+      <!-- <button id="send" class="send" type="button">
+        Відправити
+      </button> -->
+
+
+    </form>
+  </section>
+
+    <table>
+      <thead>
+        
+        <tr>
+          <th>Прізвище</th>
+          <th>Ім'я</th>
+          <th>По батькові</th>
+          <th>Спосіб оплати</th>
+          <th>Місто</th>
+          <th>Адреса</th>
+          <th>Кількість товару</th>          
+        </tr>
+      </thead>
+      <tbody></tbody>
+      
+    </table>
+    <button onclick="style.display='none'" class="close">close</button>
+  
+
+<script src="mine.js"></script>  
+</body>
+</html>
+
+
+
